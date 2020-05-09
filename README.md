@@ -38,3 +38,6 @@ BOEING COMPANY	Self	The Boeing Company Political Action Committee	Washington Int
 BOEING COMPANY	Self		Washington International Trade Foundation	$7,000,000.00	Rep. Kevin Brady, Rep. Joseph Crowley.
 ```
 
+2. If the recipient is `non-profit-org`, e.g. `barack obama foundataion` or `workingNations-JanesOates`, it's hard to track more since they are prohibited to directly/indrectly be involved in the political campaigns.
+
+3. 
