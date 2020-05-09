@@ -40,4 +40,4 @@ BOEING COMPANY	Self		Washington International Trade Foundation	$7,000,000.00	Rep
 
 2. If the recipient is `non-profit-org`, e.g. `barack obama foundataion` or `workingNations-JanesOates`, it's hard to track more since they are prohibited to directly/indrectly be involved in the political campaigns.
 
-3. 
+3. So let's track down the case where the recipeint is `legislator` only at this moment, e.g. `Rep. Kevin Brady`.
