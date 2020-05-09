@@ -21,3 +21,20 @@ List up data &amp; methodology about tracking the change of legislator's congres
   - debated
   - amended
 5. 
+
+## Tracking
+1. Let's start from the largest value contributed by the `PACs` 
+```sql
+select cd.organization_name, cb.contributor_name, p.pac_name, cb.payee_name, cb.amount, cb.recipient_name, cb.contribution_date 
+from relational___campaign.contributiondisclosure cd
+	inner join relational___campaign.contributions cb using ("ld203_uuid")
+	inner join relational___campaign.pacs p using ("ld203_uuid")
+where cb.amount::numeric > 0
+order by cb.amount desc
+>>>Boeing Company	Self	The Boeing Company Political Action Committee	Barack Obama Foundation	$9,999,999.00	Barack Obama - Obama Presidential Center - NOTE - Contribution was $10,000,000.00.  The form will not accept $10,000,000.00 - - -  LRC staff said to record the highest amount the form will accept.
+Goodwill Industries International, Inc.	Self		Hyatt; Washington, DC	$8,642,017.00	Jane Oates
+BOEING COMPANY	Self	United Space Alliance Political Action Committee (USAPAC)	Washington International Trade Foundation	$7,000,000.00	Rep. Kevin Brady, Rep. Joseph Crowley.
+BOEING COMPANY	Self	The Boeing Company Political Action Committee	Washington International Trade Foundation	$7,000,000.00	Rep. Kevin Brady, Rep. Joseph Crowley.
+BOEING COMPANY	Self		Washington International Trade Foundation	$7,000,000.00	Rep. Kevin Brady, Rep. Joseph Crowley.
+```
+
