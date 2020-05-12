@@ -2,6 +2,9 @@
 
 List up data &amp; methodology about tracking the change of legislator's congressional behavior
 
+# Nominated to the committee
+# Switching party
+
 ## What Needs To be Done
 
 - Classify the legislative behavior
