@@ -4,6 +4,7 @@ List up data &amp; methodology about tracking the change of legislator's congres
 
 # Nominated to the committee
 # Switching party
+# Voting
 
 ## What Needs To be Done
 
